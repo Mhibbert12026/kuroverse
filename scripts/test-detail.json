@@ -1,0 +1,4 @@
+{
+  "query": "query($id: Int) { Media(id: $id, type: ANIME) { id title { english } description coverImage { extraLarge } bannerImage genres averageScore episodes popularity status trailer { id site } } }",
+  "variables": { "id": 21 }
+}

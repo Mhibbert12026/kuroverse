@@ -1,0 +1,3 @@
+{
+  "query": "query { Media(id: 21, type: ANIME) { recommendations(perPage: 2) { edges { node { mediaRecommendation { id } } } } } }"
+}
