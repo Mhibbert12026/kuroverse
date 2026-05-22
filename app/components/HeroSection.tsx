@@ -27,21 +27,21 @@ export function HeroSection({ anime }: HeroSectionProps) {
           </div>
 
           <h1 className="font-display text-4xl font-bold leading-[1.05] tracking-tight sm:text-5xl lg:text-6xl xl:text-[3.75rem]">
-            The cinematic home for{" "}
-            <span className="gradient-text">anime culture</span>
+            A living home for{" "}
+            <span className="gradient-text">anime fandom</span>
           </h1>
 
           <p className="max-w-xl text-base leading-relaxed text-white/55 sm:text-lg">
-            Stream fan edits, rank trending series, and join legendary fandoms —
-            live data from AniList, built for fans who live anime.
+            Real-time discussions, watch parties, and trending hubs — your feed updates
+            as the community moves.
           </p>
 
           <div className="flex flex-wrap items-center gap-3 sm:gap-4">
             <a
-              href="#communities"
+              href="#live-feed"
               className="group inline-flex items-center gap-2.5 rounded-full bg-gradient-to-r from-accent-orange via-accent-pink to-accent-purple px-7 py-3.5 text-sm font-bold text-white shadow-[0_0_40px_rgba(255,90,31,0.4)] transition-all duration-300 hover:scale-105 hover:shadow-[0_0_55px_rgba(255,90,31,0.55)]"
             >
-              Join the Community
+              See live activity
             </a>
             <a
               href="#trending-anime"

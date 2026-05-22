@@ -1,30 +1,51 @@
+import { Suspense } from "react";
 import { CommunitySidebar } from "./CommunitySidebar";
 import { JoinCommunityCTA } from "./JoinCommunityCTA";
+import { HomePersonalizedLoader } from "./home/HomePersonalizedLoader";
+import { HomeSocialLoader } from "./home/HomeSocialLoader";
+import { HomeSocialSkeleton } from "./home/HomeSocialSkeleton";
 import {
   HeroSectionWithSkeleton,
   TrendingAnimeSectionWithSkeleton,
   FeaturedCommunitiesWithSkeleton,
-  RecommendationCardsWithSkeleton,
   TrendingFeedWithSkeleton,
 } from "./anime/AnimeSectionLoaders";
+import { RecommendationCardsSkeleton } from "./anime/AnimeSkeletons";
+
+function HomePersonalizedWithSkeleton() {
+  return (
+    <Suspense fallback={<RecommendationCardsSkeleton />}>
+      <HomePersonalizedLoader />
+    </Suspense>
+  );
+}
+
+function HomeSocialWithSkeleton() {
+  return (
+    <Suspense fallback={<HomeSocialSkeleton />}>
+      <HomeSocialLoader />
+    </Suspense>
+  );
+}
 
 export function HomeAnimeContent() {
   return (
-    <div className="home-section-stack mt-8 flex flex-col gap-10 sm:mt-16 sm:gap-16 lg:gap-20">
+    <div className="home-section-stack mt-8 flex flex-col gap-10 sm:mt-16 sm:gap-14 lg:gap-16">
       <HeroSectionWithSkeleton />
+
+      <HomeSocialWithSkeleton />
+
+      <HomePersonalizedWithSkeleton />
+
       <TrendingAnimeSectionWithSkeleton />
+
       <FeaturedCommunitiesWithSkeleton />
 
-      <div className="grid gap-8 lg:grid-cols-[1fr_300px] xl:grid-cols-[minmax(0,1fr)_minmax(0,1.1fr)_280px] xl:gap-10">
-        <div id="watchlists" className="flex flex-col gap-8 xl:col-span-1">
-          <RecommendationCardsWithSkeleton />
-        </div>
-
-        <div id="trending" className="flex flex-col gap-8 xl:col-span-1">
+      <div className="grid gap-8 lg:grid-cols-[1fr_280px] xl:gap-10">
+        <div id="trending" className="min-w-0">
           <TrendingFeedWithSkeleton />
         </div>
-
-        <div id="communities-sidebar" className="lg:col-span-1 xl:col-span-1">
+        <div id="communities-sidebar" className="lg:col-span-1">
           <CommunitySidebar />
         </div>
       </div>

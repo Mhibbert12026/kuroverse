@@ -49,5 +49,5 @@ export function usePaginatedFeed<T extends { id: string | number }>({
     }
   }, [fetchPath, getId, hasMore, loading, page]);
 
-  return { items, hasMore, loading, loadMore };
+  return { items, hasMore, loading, loadMore, setItems };
 }
