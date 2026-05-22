@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 560" fill="none">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0c0618"/>
+      <stop offset="45%" stop-color="#1a0e3a"/>
+      <stop offset="100%" stop-color="#3d1d6e"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="70%" r="55%">
+      <stop offset="0%" stop-color="#a78bfa" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#7c3aed" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="blur"><feGaussianBlur stdDeviation="8"/></filter>
+  </defs>
+  <rect width="400" height="560" fill="url(#sky)"/>
+  <rect width="400" height="560" fill="url(#glow)"/>
+  <!-- stars -->
+  <circle cx="208.0" cy="21.6" r="0.6" fill="#fff" opacity="0.25"/><circle cx="8.0" cy="117.0" r="1" fill="#fff" opacity="0.37"/><circle cx="196.0" cy="43.1" r="1.4" fill="#fff" opacity="0.49"/><circle cx="384.0" cy="138.6" r="0.6" fill="#fff" opacity="0.61"/><circle cx="184.0" cy="64.7" r="1" fill="#fff" opacity="0.73"/><circle cx="372.0" cy="160.2" r="1.4" fill="#fff" opacity="0.25"/><circle cx="172.0" cy="86.2" r="0.6" fill="#fff" opacity="0.37"/><circle cx="360.0" cy="12.3" r="1" fill="#fff" opacity="0.49"/><circle cx="160.0" cy="107.8" r="1.4" fill="#fff" opacity="0.61"/><circle cx="348.0" cy="33.9" r="0.6" fill="#fff" opacity="0.73"/><circle cx="148.0" cy="129.4" r="1" fill="#fff" opacity="0.25"/><circle cx="336.0" cy="55.4" r="1.4" fill="#fff" opacity="0.37"/><circle cx="136.0" cy="150.9" r="0.6" fill="#fff" opacity="0.49"/><circle cx="324.0" cy="77.0" r="1" fill="#fff" opacity="0.61"/><circle cx="124.0" cy="3.1" r="1.4" fill="#fff" opacity="0.73"/><circle cx="312.0" cy="98.6" r="0.6" fill="#fff" opacity="0.25"/><circle cx="112.0" cy="24.6" r="1" fill="#fff" opacity="0.37"/><circle cx="300.0" cy="120.1" r="1.4" fill="#fff" opacity="0.49"/><circle cx="100.0" cy="46.2" r="0.6" fill="#fff" opacity="0.61"/><circle cx="288.0" cy="141.7" r="1" fill="#fff" opacity="0.73"/><circle cx="88.0" cy="67.8" r="1.4" fill="#fff" opacity="0.25"/><circle cx="276.0" cy="163.2" r="0.6" fill="#fff" opacity="0.37"/><circle cx="76.0" cy="89.3" r="1" fill="#fff" opacity="0.49"/><circle cx="264.0" cy="15.4" r="1.4" fill="#fff" opacity="0.61"/><circle cx="64.0" cy="110.9" r="0.6" fill="#fff" opacity="0.73"/><circle cx="252.0" cy="37.0" r="1" fill="#fff" opacity="0.25"/><circle cx="52.0" cy="132.4" r="1.4" fill="#fff" opacity="0.37"/><circle cx="240.0" cy="58.5" r="0.6" fill="#fff" opacity="0.49"/>
+  <!-- moon / energy orb -->
+  <circle cx="312" cy="100.8" r="64.8" fill="#7c3aed" opacity="0.15" filter="url(#blur)"/>
+  <circle cx="312" cy="100.8" r="36" fill="#a78bfa" opacity="0.9"/>
+  <!-- distant mountains -->
+  <path d="M0 347.2 L80 268.8 L152 324.79999999999995 L220.00000000000003 235.2 L288 308 L400 280 L400 560 L0 560Z" fill="#12081f" opacity="0.85"/>
+  <!-- city / forest silhouette -->
+  <path d="M0 403.2 L28.571428571428573 384.2 L61.9047619047619 367.2 L95.23809523809523 350.2 L128.57142857142858 373.2 L161.9047619047619 356.2 L195.23809523809527 379.2 L228.57142857142858 362.2 L261.9047619047619 385.2 L295.2380952380952 368.2 L328.57142857142856 351.2 L361.9047619047619 374.2 L395.2380952380952 357.2 L400 403.2 L400 560 L0 560Z" fill="#000" opacity="0.55"/>
+  <!-- speed lines -->
+  <g opacity="0.12" stroke="#a78bfa" stroke-width="1.5">
+    <line x1="0" y1="196" x2="140" y2="212.8"/>
+    <line x1="0" y1="235.2" x2="112.00000000000001" y2="246.4"/>
+    <line x1="400" y1="168" x2="260" y2="184.8"/>
+  </g>
+  <!-- character silhouette -->
+  <g transform="translate(168 156.8)">
+    <ellipse cx="40" cy="95" rx="55" ry="18" fill="#7c3aed" opacity="0.35" filter="url(#blur)"/>
+    <path d="M40 18 C58 2 78 18 70 40 C82 48 88 62 80 78 L84 125 L-4 125 L0 78 C-8 62 0 48 12 40 C4 18 24 2 40 18Z" fill="#08040f"/>
+      <path d="M22 16 C28 -4 52 -4 58 16 C50 6 30 6 22 16Z" fill="#140a22"/>
+      <circle cx="34" cy="40" r="2.5" fill="#a78bfa"/><circle cx="46" cy="40" r="2.5" fill="#a78bfa"/>
+      <path d="M78 50 L108 38 L114 98 L86 104Z" fill="#7c3aed" opacity="0.75"/>
+      <circle cx="95" cy="55" r="18" fill="#a78bfa" opacity="0.2" filter="url(#blur)"/>
+  </g>
+  <!-- foreground cinematic bars -->
+  <rect y="556" width="400" height="4" fill="#7c3aed" opacity="0.6"/>
+  <rect width="400" height="3" fill="#7c3aed" opacity="0.35"/>
+</svg>

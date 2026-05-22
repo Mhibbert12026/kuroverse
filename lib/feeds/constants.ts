@@ -1,0 +1,3 @@
+export const TRENDING_FEED_PAGE_SIZE = 8;
+export const RECOMMENDATIONS_FEED_PAGE_SIZE = 4;
+export const CLIPS_FEED_PAGE_SIZE = 4;

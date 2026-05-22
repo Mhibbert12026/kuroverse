@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 480" fill="none">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#041210"/>
+      <stop offset="45%" stop-color="#0d3d32"/>
+      <stop offset="100%" stop-color="#1a6b5a"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="70%" r="55%">
+      <stop offset="0%" stop-color="#6ee7b7" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#34d399" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="blur"><feGaussianBlur stdDeviation="8"/></filter>
+  </defs>
+  <rect width="320" height="480" fill="url(#sky)"/>
+  <rect width="320" height="480" fill="url(#glow)"/>
+  <!-- stars -->
+  <circle cx="128.0" cy="18.5" r="0.6" fill="#fff" opacity="0.25"/><circle cx="278.4" cy="100.3" r="1" fill="#fff" opacity="0.37"/><circle cx="118.4" cy="37.0" r="1.4" fill="#fff" opacity="0.49"/><circle cx="268.8" cy="118.8" r="0.6" fill="#fff" opacity="0.61"/><circle cx="108.8" cy="55.4" r="1" fill="#fff" opacity="0.73"/><circle cx="259.2" cy="137.3" r="1.4" fill="#fff" opacity="0.25"/><circle cx="99.2" cy="73.9" r="0.6" fill="#fff" opacity="0.37"/><circle cx="249.6" cy="10.6" r="1" fill="#fff" opacity="0.49"/><circle cx="89.6" cy="92.4" r="1.4" fill="#fff" opacity="0.61"/><circle cx="240.0" cy="29.0" r="0.6" fill="#fff" opacity="0.73"/><circle cx="80.0" cy="110.9" r="1" fill="#fff" opacity="0.25"/><circle cx="230.4" cy="47.5" r="1.4" fill="#fff" opacity="0.37"/><circle cx="70.4" cy="129.4" r="0.6" fill="#fff" opacity="0.49"/><circle cx="220.8" cy="66.0" r="1" fill="#fff" opacity="0.61"/><circle cx="60.8" cy="2.6" r="1.4" fill="#fff" opacity="0.73"/><circle cx="211.2" cy="84.5" r="0.6" fill="#fff" opacity="0.25"/><circle cx="51.2" cy="21.1" r="1" fill="#fff" opacity="0.37"/><circle cx="201.6" cy="103.0" r="1.4" fill="#fff" opacity="0.49"/><circle cx="41.6" cy="39.6" r="0.6" fill="#fff" opacity="0.61"/><circle cx="192.0" cy="121.4" r="1" fill="#fff" opacity="0.73"/><circle cx="32.0" cy="58.1" r="1.4" fill="#fff" opacity="0.25"/><circle cx="182.4" cy="139.9" r="0.6" fill="#fff" opacity="0.37"/><circle cx="22.4" cy="76.6" r="1" fill="#fff" opacity="0.49"/><circle cx="172.8" cy="13.2" r="1.4" fill="#fff" opacity="0.61"/><circle cx="12.8" cy="95.0" r="0.6" fill="#fff" opacity="0.73"/><circle cx="163.2" cy="31.7" r="1" fill="#fff" opacity="0.25"/><circle cx="3.2" cy="113.5" r="1.4" fill="#fff" opacity="0.37"/><circle cx="153.6" cy="50.2" r="0.6" fill="#fff" opacity="0.49"/>
+  <!-- moon / energy orb -->
+  <circle cx="249.60000000000002" cy="86.39999999999999" r="51.839999999999996" fill="#34d399" opacity="0.15" filter="url(#blur)"/>
+  <circle cx="249.60000000000002" cy="86.39999999999999" r="28.799999999999997" fill="#6ee7b7" opacity="0.9"/>
+  <!-- distant mountains -->
+  <path d="M0 297.6 L64 230.39999999999998 L121.6 278.4 L176 201.6 L230.39999999999998 264 L320 240 L320 480 L0 480Z" fill="#061210" opacity="0.85"/>
+  <!-- city / forest silhouette -->
+  <path d="M0 345.59999999999997 L22.857142857142858 312.59999999999997 L49.52380952380952 295.59999999999997 L76.19047619047619 318.59999999999997 L102.85714285714286 301.59999999999997 L129.52380952380952 324.59999999999997 L156.1904761904762 307.59999999999997 L182.85714285714286 330.59999999999997 L209.52380952380955 313.59999999999997 L236.19047619047618 296.59999999999997 L262.85714285714283 319.59999999999997 L289.5238095238095 302.59999999999997 L316.19047619047615 325.59999999999997 L320 345.59999999999997 L320 480 L0 480Z" fill="#000" opacity="0.55"/>
+  <!-- speed lines -->
+  <g opacity="0.12" stroke="#6ee7b7" stroke-width="1.5">
+    <line x1="0" y1="168" x2="112" y2="182.4"/>
+    <line x1="0" y1="201.6" x2="89.60000000000001" y2="211.2"/>
+    <line x1="320" y1="144" x2="208" y2="158.4"/>
+  </g>
+  <!-- character silhouette -->
+  <g transform="translate(126.4 134.4)">
+    <ellipse cx="40" cy="95" rx="55" ry="18" fill="#34d399" opacity="0.35" filter="url(#blur)"/>
+    <path d="M36 24 C50 10 60 26 56 44 C66 52 70 66 64 82 L66 120 L8 120 L12 82 C6 66 12 52 22 44 C18 26 28 12 36 24Z" fill="#041210"/>
+      <path d="M24 22 C28 8 46 8 50 22 C44 14 30 14 24 22Z" fill="#062018"/>
+      <path d="M8 70 L28 55 L32 100 L12 105Z" fill="#34d399" opacity="0.5"/><circle cx="34" cy="40" r="2.5" fill="#6ee7b7"/><circle cx="46" cy="40" r="2.5" fill="#6ee7b7"/>
+  </g>
+  <!-- foreground cinematic bars -->
+  <rect y="476" width="320" height="4" fill="#34d399" opacity="0.6"/>
+  <rect width="320" height="3" fill="#34d399" opacity="0.35"/>
+</svg>

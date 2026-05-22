@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" fill="none">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1f1230"/>
+      <stop offset="45%" stop-color="#be185d"/>
+      <stop offset="100%" stop-color="#ec4899"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="70%" r="55%">
+      <stop offset="0%" stop-color="#fce7f3" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#f9a8d4" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="blur"><feGaussianBlur stdDeviation="8"/></filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#sky)"/>
+  <rect width="400" height="600" fill="url(#glow)"/>
+  <!-- stars -->
+  <circle cx="4.0" cy="23.1" r="0.6" fill="#fff" opacity="0.25"/><circle cx="192.0" cy="125.4" r="1" fill="#fff" opacity="0.37"/><circle cx="380.0" cy="46.2" r="1.4" fill="#fff" opacity="0.49"/><circle cx="180.0" cy="148.5" r="0.6" fill="#fff" opacity="0.61"/><circle cx="368.0" cy="69.3" r="1" fill="#fff" opacity="0.73"/><circle cx="168.0" cy="171.6" r="1.4" fill="#fff" opacity="0.25"/><circle cx="356.0" cy="92.4" r="0.6" fill="#fff" opacity="0.37"/><circle cx="156.0" cy="13.2" r="1" fill="#fff" opacity="0.49"/><circle cx="344.0" cy="115.5" r="1.4" fill="#fff" opacity="0.61"/><circle cx="144.0" cy="36.3" r="0.6" fill="#fff" opacity="0.73"/><circle cx="332.0" cy="138.6" r="1" fill="#fff" opacity="0.25"/><circle cx="132.0" cy="59.4" r="1.4" fill="#fff" opacity="0.37"/><circle cx="320.0" cy="161.7" r="0.6" fill="#fff" opacity="0.49"/><circle cx="120.0" cy="82.5" r="1" fill="#fff" opacity="0.61"/><circle cx="308.0" cy="3.3" r="1.4" fill="#fff" opacity="0.73"/><circle cx="108.0" cy="105.6" r="0.6" fill="#fff" opacity="0.25"/><circle cx="296.0" cy="26.4" r="1" fill="#fff" opacity="0.37"/><circle cx="96.0" cy="128.7" r="1.4" fill="#fff" opacity="0.49"/><circle cx="284.0" cy="49.5" r="0.6" fill="#fff" opacity="0.61"/><circle cx="84.0" cy="151.8" r="1" fill="#fff" opacity="0.73"/><circle cx="272.0" cy="72.6" r="1.4" fill="#fff" opacity="0.25"/><circle cx="72.0" cy="174.9" r="0.6" fill="#fff" opacity="0.37"/><circle cx="260.0" cy="95.7" r="1" fill="#fff" opacity="0.49"/><circle cx="60.0" cy="16.5" r="1.4" fill="#fff" opacity="0.61"/><circle cx="248.0" cy="118.8" r="0.6" fill="#fff" opacity="0.73"/><circle cx="48.0" cy="39.6" r="1" fill="#fff" opacity="0.25"/><circle cx="236.0" cy="141.9" r="1.4" fill="#fff" opacity="0.37"/><circle cx="36.0" cy="62.7" r="0.6" fill="#fff" opacity="0.49"/>
+  <!-- moon / energy orb -->
+  <circle cx="312" cy="108" r="64.8" fill="#f9a8d4" opacity="0.15" filter="url(#blur)"/>
+  <circle cx="312" cy="108" r="36" fill="#fce7f3" opacity="0.9"/>
+  <!-- distant mountains -->
+  <path d="M0 372 L80 288 L152 348 L220.00000000000003 252 L288 330 L400 300 L400 600 L0 600Z" fill="#180c22" opacity="0.85"/>
+  <!-- city / forest silhouette -->
+  <path d="M0 432 L28.571428571428573 402 L61.9047619047619 385 L95.23809523809523 408 L128.57142857142858 391 L161.9047619047619 414 L195.23809523809527 397 L228.57142857142858 380 L261.9047619047619 403 L295.2380952380952 386 L328.57142857142856 409 L361.9047619047619 392 L395.2380952380952 415 L400 432 L400 600 L0 600Z" fill="#000" opacity="0.55"/>
+  <!-- speed lines -->
+  <g opacity="0.12" stroke="#fce7f3" stroke-width="1.5">
+    <line x1="0" y1="210" x2="140" y2="228"/>
+    <line x1="0" y1="252" x2="112.00000000000001" y2="264"/>
+    <line x1="400" y1="180" x2="260" y2="198"/>
+  </g>
+  <!-- character silhouette -->
+  <g transform="translate(168 168.00000000000003)">
+    <ellipse cx="40" cy="95" rx="55" ry="18" fill="#f9a8d4" opacity="0.35" filter="url(#blur)"/>
+    <path d="M38 22 C52 8 62 20 58 38 C68 44 74 58 68 72 L70 118 L10 118 L12 72 C6 58 12 44 22 38 C18 20 28 8 38 22Z" fill="#0a0614"/>
+      <path d="M28 20 C32 4 48 4 52 20 C46 12 34 12 28 20Z" fill="#12081f"/><circle cx="34" cy="40" r="2.5" fill="#fce7f3"/><circle cx="46" cy="40" r="2.5" fill="#fce7f3"/>
+  </g>
+  <!-- foreground cinematic bars -->
+  <rect y="596" width="400" height="4" fill="#f9a8d4" opacity="0.6"/>
+  <rect width="400" height="3" fill="#f9a8d4" opacity="0.35"/>
+</svg>
