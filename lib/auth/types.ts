@@ -6,6 +6,7 @@ export type UserProfile = {
   bio: string | null;
   favorite_anime: string | null;
   onboarding_completed: boolean;
+  is_moderator?: boolean;
   created_at: string;
   updated_at: string;
 };

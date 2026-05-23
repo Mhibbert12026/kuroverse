@@ -96,6 +96,16 @@ export function UserMenu() {
           <a href="/#communities" className="auth-user-menu__item" role="menuitem" onClick={() => setOpen(false)}>
             Communities
           </a>
+          {profile?.is_moderator ? (
+            <Link
+              href="/admin/seed"
+              className="auth-user-menu__item"
+              role="menuitem"
+              onClick={() => setOpen(false)}
+            >
+              Content seeding
+            </Link>
+          ) : null}
           <div className="auth-user-menu__divider" />
           <form action={signOutAction}>
             <button type="submit" className="auth-user-menu__item auth-user-menu__item--danger" role="menuitem">

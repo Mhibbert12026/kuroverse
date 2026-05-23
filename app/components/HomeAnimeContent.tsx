@@ -1,6 +1,7 @@
 import { Suspense } from "react";
 import { CommunitySidebar } from "./CommunitySidebar";
 import { JoinCommunityCTA } from "./JoinCommunityCTA";
+import { DailyFeaturedLoader } from "./home/DailyFeaturedLoader";
 import { HomePersonalizedLoader } from "./home/HomePersonalizedLoader";
 import { HomeSocialLoader } from "./home/HomeSocialLoader";
 import { HomeSocialSkeleton } from "./home/HomeSocialSkeleton";
@@ -32,6 +33,10 @@ export function HomeAnimeContent() {
   return (
     <div className="home-section-stack mt-8 flex flex-col gap-10 sm:mt-16 sm:gap-14 lg:gap-16">
       <HeroSectionWithSkeleton />
+
+      <Suspense fallback={null}>
+        <DailyFeaturedLoader />
+      </Suspense>
 
       <HomeSocialWithSkeleton />
 

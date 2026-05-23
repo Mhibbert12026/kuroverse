@@ -14,6 +14,7 @@ export function profileFromRow(row: Record<string, unknown>): UserProfile {
       row.onboarding_completed != null
         ? Boolean(row.onboarding_completed)
         : Boolean(username),
+    is_moderator: row.is_moderator != null ? Boolean(row.is_moderator) : false,
     created_at: String(row.created_at),
     updated_at: String(row.updated_at),
   };
