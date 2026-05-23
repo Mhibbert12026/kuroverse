@@ -40,7 +40,7 @@ update public.profiles set is_moderator = true where username = 'your_handle';
 
 ## Scheduling
 
-- **Vercel cron**: `vercel.json` hits `/api/cron/seed` every 6 hours (align with `schedule_hours` in admin).
+- **Vercel cron**: `vercel.json` hits `/api/cron/seed` once daily at 12:00 UTC (Hobby plan limit). Tune `schedule_hours` in admin for manual runs between cron.
 - **Manual**: `/admin/seed` → **Run seed drop now**
 - Respects `next_run_at` unless forced
 
